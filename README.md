@@ -9,18 +9,6 @@ helm repo add yakovbeder https://yakovbeder.github.io/helm-charts
 helm repo update
 ```
 
-To pull a chart locally without installing:
-
-```bash
-helm pull yakovbeder/wiki --version 3.1.0
-helm pull yakovbeder/redhat-rhaap-portal --version 2.1.0
-```
-
-This downloads the `.tgz` package to your current directory. Add `--untar` to extract it immediately:
-
-```bash
-helm pull yakovbeder/wiki --version 3.1.0 --untar
-```
 
 ## Available Charts
 
@@ -39,6 +27,13 @@ The most powerful and extensible open source Wiki software ([Wiki.js](https://js
 - OpenShift Route with TLS edge termination (enabled by default instead of Ingress)
 - Security contexts compatible with the `restricted` SCC (`runAsNonRoot`, `drop ALL`, `seccompProfile`)
 - PostgreSQL 18 deployed as a StatefulSet with matching security contexts
+
+**Pull:**
+
+```bash
+helm pull yakovbeder/wiki --version 3.1.0
+helm pull yakovbeder/wiki --version 3.1.0 --untar  # extract immediately
+```
 
 **Install:**
 
@@ -63,6 +58,13 @@ helm install wikijs yakovbeder/wiki -n wikijs --create-namespace \
 ### redhat-rhaap-portal
 
 A Helm chart to deploy the Red Hat Ansible Automation Platform self-service automation portal.
+
+**Pull:**
+
+```bash
+helm pull yakovbeder/redhat-rhaap-portal --version 2.1.0
+helm pull yakovbeder/redhat-rhaap-portal --version 2.1.0 --untar  # extract immediately
+```
 
 **Install:**
 
