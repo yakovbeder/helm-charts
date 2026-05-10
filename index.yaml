@@ -8,7 +8,7 @@ entries:
       charts.openshift.io/supportURL: https://access.redhat.com/support
     apiVersion: v2
     appVersion: 2.1.1
-    created: "2026-02-16T08:48:44.41515194Z"
+    created: "2026-05-10T12:47:29.765917138Z"
     dependencies:
     - name: redhat-developer-hub
       repository: https://charts.openshift.io
@@ -34,4 +34,26 @@ entries:
     urls:
     - https://yakovbeder.github.io/helm-charts/redhat-rhaap-portal-2.1.0.tgz
     version: 2.1.0
-generated: "2026-02-16T08:48:44.38635937Z"
+  wiki:
+  - apiVersion: v2
+    appVersion: "2"
+    created: "2026-05-10T12:47:29.769080985Z"
+    description: The most powerful and extensible open source Wiki software.
+    digest: 4e2c9c9e9bf574166a08c938336c9c1d0b03184fed2404e81392a39509ffe562
+    home: https://js.wiki
+    icon: https://cdn.js.wiki/images/wikijs-butterfly.svg
+    keywords:
+    - wiki
+    - documentation
+    - knowledge base
+    - docs
+    - reference
+    - editor
+    name: wiki
+    sources:
+    - https://github.com/requarks/wiki
+    type: application
+    urls:
+    - https://yakovbeder.github.io/helm-charts/wiki-3.1.0.tgz
+    version: 3.1.0
+generated: "2026-05-10T12:47:29.726216298Z"
