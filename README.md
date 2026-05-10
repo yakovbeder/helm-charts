@@ -15,7 +15,6 @@ helm repo update
 | Chart | Version | App Version | Description |
 |-------|---------|-------------|-------------|
 | [wiki](#wiki) | 3.1.0 | 2 | Wiki.js - open source wiki software (OpenShift ready) |
-| [redhat-rhaap-portal](#redhat-rhaap-portal) | 2.1.0 | 2.1.1 | Ansible self-service automation portal |
 
 ---
 
@@ -53,21 +52,3 @@ helm install wikijs yakovbeder/wiki -n wikijs --create-namespace \
 - `requarks/wiki:2`
 - `postgres:18`
 
----
-
-### redhat-rhaap-portal
-
-A Helm chart to deploy the Red Hat Ansible Automation Platform self-service automation portal.
-
-**Pull:**
-
-```bash
-helm pull yakovbeder/redhat-rhaap-portal --version 2.1.0
-helm pull yakovbeder/redhat-rhaap-portal --version 2.1.0 --untar  # extract immediately
-```
-
-**Install:**
-
-```bash
-helm install rhaap yakovbeder/redhat-rhaap-portal -n rhaap --create-namespace
-```
