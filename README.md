@@ -9,6 +9,19 @@ helm repo add yakovbeder https://yakovbeder.github.io/helm-charts
 helm repo update
 ```
 
+To pull a chart locally without installing:
+
+```bash
+helm pull yakovbeder/wiki --version 3.1.0
+helm pull yakovbeder/redhat-rhaap-portal --version 2.1.0
+```
+
+This downloads the `.tgz` package to your current directory. Add `--untar` to extract it immediately:
+
+```bash
+helm pull yakovbeder/wiki --version 3.1.0 --untar
+```
+
 ## Available Charts
 
 | Chart | Version | App Version | Description |
